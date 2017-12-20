@@ -11,18 +11,19 @@
         android:layout_height="wrap_content"
         android:background="#d81e06">
 
-        <TextView
-            android:id="@+id/Diaryempty"
+        <Button
+            android:id="@+id/back"
             android:layout_width="50dp"
             android:layout_height="25dp"
             android:layout_gravity="center"
             android:layout_margin="10dp"
-            android:background="#d81e06"
-            android:textSize="16sp"
-            android:text=""
+            android:background="#00000000"
+            android:onClick="LissayUpdateBack"
+            android:scaleType="fitXY"
+            android:text="返回"
             android:textColor="#fff"
 
-            />
+            android:textSize="16sp" />
 
         <TextView
             android:id="@+id/DiaryTitle"
@@ -50,26 +51,30 @@
             />
     </LinearLayout>
 
+
     <RelativeLayout
-        android:id="@+id/re_Accountsecurity"
         android:layout_width="match_parent"
         android:layout_height="48dp"
-        android:layout_marginBottom="18dp"
-        android:layout_marginTop="18dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginTop="36dp"
         android:background="#ffffff"
         android:clickable="true"
-        android:paddingBottom="8dp"
-        android:paddingTop="8dp">
+        android:paddingBottom="0dp"
+        android:paddingTop="0dp">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:layout_marginLeft="16dp"
+        <Button
+            android:id="@+id/safe"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:layout_margin="0dp"
+            android:background="#00000000"
+            android:paddingLeft="-280dp"
+
+            android:scaleType="fitXY"
             android:text="账号与安全"
-            android:textColor="#353535"
+            android:textColor="#000000"
             android:textSize="16sp" />
-
         <ImageView
             android:layout_width="26dp"
             android:layout_height="26dp"
@@ -78,28 +83,32 @@
             android:layout_marginRight="16dp"
             android:src="@drawable/my_arror" />
 
+
     </RelativeLayout>
 
     <RelativeLayout
-        android:id="@+id/re_Generalpurpose"
         android:layout_width="match_parent"
         android:layout_height="48dp"
-        android:layout_marginBottom="28dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginTop="36dp"
         android:background="#ffffff"
         android:clickable="true"
-        android:paddingBottom="8dp"
-        android:paddingTop="8dp">
+        android:paddingBottom="0dp"
+        android:paddingTop="0dp">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:layout_marginLeft="16dp"
+        <Button
+            android:id="@+id/tongyong"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:layout_margin="0dp"
+            android:background="#00000000"
+            android:paddingLeft="-325dp"
+
+            android:scaleType="fitXY"
             android:text="通用"
-            android:textColor="#353535"
+            android:textColor="#000000"
             android:textSize="16sp" />
-
         <ImageView
             android:layout_width="26dp"
             android:layout_height="26dp"
@@ -108,28 +117,34 @@
             android:layout_marginRight="16dp"
             android:src="@drawable/my_arror" />
 
+
     </RelativeLayout>
 
+
     <RelativeLayout
-        android:id="@+id/re_Helpfeedback"
         android:layout_width="match_parent"
         android:layout_height="48dp"
-        android:layout_marginBottom="2dp"
-        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginTop="36dp"
         android:background="#ffffff"
         android:clickable="true"
-        android:paddingBottom="8dp"
-        android:paddingTop="8dp">
+        android:paddingBottom="0dp"
+        android:paddingTop="0dp">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:layout_marginLeft="16dp"
+        <Button
+            android:id="@+id/help"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:layout_margin="0dp"
+            android:background="#00000000"
+            android:onClick="help"
+            android:paddingLeft="-280dp"
+
+            android:scaleType="fitXY"
             android:text="帮助与反馈"
-            android:textColor="#353535"
+            android:textColor="#000000"
             android:textSize="16sp" />
-
         <ImageView
             android:layout_width="26dp"
             android:layout_height="26dp"
@@ -138,56 +153,33 @@
             android:layout_marginRight="16dp"
             android:src="@drawable/my_arror" />
 
-    </RelativeLayout>
-    <RelativeLayout
-        android:id="@+id/about"
-        android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:layout_marginBottom="2dp"
-        android:layout_marginTop="0dp"
-        android:background="#ffffff"
-        android:clickable="true"
-        android:paddingBottom="8dp"
-        android:paddingTop="8dp">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:layout_marginLeft="16dp"
-            android:text="关于听说"
-            android:textColor="#353535"
-            android:textSize="16sp" />
-
-        <ImageView
-            android:layout_width="26dp"
-            android:layout_height="26dp"
-            android:layout_alignParentRight="true"
-            android:layout_centerVertical="true"
-            android:layout_marginRight="16dp"
-            android:src="@drawable/my_arror" />
 
     </RelativeLayout>
+
     <RelativeLayout
-        android:id="@+id/re_Setting"
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:layout_marginBottom="0dp"
         android:layout_marginTop="0dp"
         android:background="#ffffff"
         android:clickable="true"
-        android:paddingBottom="8dp"
-        android:paddingTop="8dp">
+        android:paddingBottom="0dp"
+        android:paddingTop="0dp">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:layout_marginLeft="16dp"
-            android:text="设置"
-            android:textColor="#353535"
+        <Button
+            android:id="@+id/guanyutingshuo"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:layout_margin="0dp"
+            android:background="#00000000"
+            android:onClick="guanyutingshuo"
+
+            android:paddingLeft="-300dp"
+            android:scaleType="fitXY"
+            android:text="关于听说"
+            android:textColor="#000000"
             android:textSize="16sp" />
-
         <ImageView
             android:layout_width="26dp"
             android:layout_height="26dp"
@@ -196,7 +188,43 @@
             android:layout_marginRight="16dp"
             android:src="@drawable/my_arror" />
 
+
     </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginTop="36dp"
+        android:background="#ffffff"
+        android:clickable="true"
+        android:paddingBottom="0dp"
+        android:paddingTop="0dp">
+
+        <Button
+            android:id="@+id/shezhi"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:layout_margin="0dp"
+            android:background="#00000000"
+            android:paddingLeft="-325dp"
+
+            android:scaleType="fitXY"
+            android:text="设置"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+        <ImageView
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/my_arror" />
+
+
+    </RelativeLayout>
+
 
 
     <RelativeLayout
@@ -214,7 +242,7 @@
             android:layout_width="match_parent"
             android:layout_height="48dp"
             android:layout_gravity="center"
-            android:layout_margin="10dp"
+            android:layout_margin="0dp"
             android:background="#00000000"
             android:onClick="re_Logout"
             android:scaleType="fitXY"

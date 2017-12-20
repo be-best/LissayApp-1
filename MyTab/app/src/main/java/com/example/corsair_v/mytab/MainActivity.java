@@ -1,8 +1,10 @@
 package com.example.corsair_v.mytab;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 
 import com.example.corsair_v.mytab.adapter.MainViewAdapter;
 import com.example.corsair_v.mytab.listener.OnTabSelectedListener;
@@ -31,6 +33,12 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+    }
+
+    //跳转到添加收藏自定义分类界面
+    public void tianjia(View v) {
+        Intent intent = new Intent(MainActivity.this, ShouCang.class);
+        startActivity(intent);
     }
 //    public void re_Logout(View v)
 //    {
