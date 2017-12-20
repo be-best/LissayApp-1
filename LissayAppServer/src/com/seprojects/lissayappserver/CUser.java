@@ -5,7 +5,6 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 
 // 类：用户
-// 说明：用于用户操作是使用
 public class CUser
 {
 	private String userID; 		// 用户ID
@@ -20,21 +19,15 @@ public class CUser
 	public CUser()
 	{
 	}
-
+	
 	// 函数：登录
 	// 参数：_phoneNum: 手机号码 ,_passwd: 密码, _phoneModel: 手机型号
 	// return: null(登录成功) String(登录失败信息)
 	public String login(String _phoneNum, String _passwd, String _phoneModel)
 	{
 		// 生成发送数据
-		JsonObject json = new JsonObject();
-		json.addProperty("op", "10001");
-		JsonObject info = new JsonObject();
-		info.addProperty("phoneNum", _phoneNum);
-		info.addProperty("passwd", _passwd);
-		info.addProperty("phoneModel", _phoneModel);
-		json.add("info", info);
-
+		JsonObject json = setData("10001", null, _phoneNum, _passwd, null, _phoneModel);
+		
 		// 数据发送
 		JsonParser parser = new JsonParser();
 		json = (JsonObject) parser.parse(CSystem.dataExchange(json.toString()));
@@ -50,19 +43,49 @@ public class CUser
 		}
 	}
 
-	// 函数：登录
+	// 函数：注册
 	// 参数：_phoneNum: 手机号码 ,_passwd: 密码, _photo: 图片链接, _phoneModel: 手机型号
 	// return: null(注册成功) String(注册失败信息)
 	public String registered(String _phoneNum, String _passwd, String _photo, String _phoneModel)
 	{
-		return "111";
+		// 生成发送数据
+		JsonObject json = setData("10003", null, _phoneNum,  _passwd, _photo, _phoneModel);
+		
+		// 数据发送
+		JsonParser parser = new JsonParser();
+		json = (JsonObject) parser.parse(CSystem.dataExchange(json.toString()));
+		
+		if (json.get("state").isJsonNull() == true)	// 注册成功
+		{
+			return null;
+		}
+		else
+		{
+			return json.get("state").getAsString(); // 注册失败返回状态标识
+		}
+		
 	}
 	
 	// 函数：退出登录
 	// return: null(退出登录成功) String(退出登录失败信息)
 	public String leave()
 	{
-		return "111";
+		// 生成发送数据
+		JsonObject json = setData("10002", userID, null, null, null, null);
+				
+		// 数据发送
+		JsonParser parser = new JsonParser();
+		json = (JsonObject) parser.parse(CSystem.dataExchange(json.toString()));
+				
+		if (json.get("state").isJsonNull() == true)	// 登录退出成功
+		{
+			return null;
+		}
+		else
+		{
+			return json.get("state").getAsString(); // 登录退出失败返回状态标识
+		}
+				
 	}
 	
 	// 函数：设置/忘记密码
@@ -70,7 +93,21 @@ public class CUser
 	// return: null(设置成功) String(设置失败信息)
 	public String setPasswd(String _passwd)
 	{
-		return "111";
+		// 生成发送数据
+		JsonObject json = setData("10004", userID, null, _passwd, null, null);
+				
+		// 数据发送
+		JsonParser parser = new JsonParser();
+		json = (JsonObject) parser.parse(CSystem.dataExchange(json.toString()));
+
+		if (json.get("state").isJsonNull() == true)	// 设置成功
+		{
+			return null;
+		}
+		else
+		{
+			return json.get("state").getAsString(); // 设置失败
+		}
 	}
 	
 	// 函数：更改头像
@@ -78,7 +115,40 @@ public class CUser
 	// return: null(更改成功) String(更改失败信息)
 	public String setPhoto(String _photo)
 	{
-		return "111";
+		// 生成发送数据
+		JsonObject json = setData("10005", userID, null, null, _photo, null);
+						
+		// 数据发送
+		JsonParser parser = new JsonParser();
+		json = (JsonObject) parser.parse(CSystem.dataExchange(json.toString()));
+
+		if (json.get("state").isJsonNull() == true)	// 更改成功
+		{
+		    return null;
+		}
+		else
+		{
+			return json.get("state").getAsString(); // 更改失败
+		}
+	}
+	
+	// 函数：生成 Json 发送数据
+	// 参数：_op: 请求号, _phoneNum: 手机号码, _passwd: 密码, _photo: 图片链接, _phoneModel: 手机型号
+	// return: JsonObject
+	private JsonObject setData(String _op, String _userID, String _phoneNum, String _passwd, String _photo, String _phoneModel)
+	{
+		// 生成发送数据
+		JsonObject json = new JsonObject();
+		json.addProperty("op", _op);
+		JsonObject info = new JsonObject();
+		info.addProperty("userID", _userID);
+		info.addProperty("phoneNum", _phoneNum);
+		info.addProperty("passwd", _passwd);
+		info.addProperty("photo", _photo);
+		info.addProperty("phoneModel", _phoneModel);
+		json.add("info", info);
+		
+		return json;
 	}
 	
 	// 函数：向对象属性赋值
