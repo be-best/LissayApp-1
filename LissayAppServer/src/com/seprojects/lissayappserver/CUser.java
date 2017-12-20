@@ -68,10 +68,10 @@ public class CUser
 	
 	// 函数：退出登录
 	// return: null(退出登录成功) String(退出登录失败信息)
-	public String leave(String _userID)
+	public String leave()
 	{
 		// 生成发送数据
-		JsonObject json = setData("10002", _userID, null, null, null, null);
+		JsonObject json = setData("10002", userID, null, null, null, null);
 				
 		// 数据发送
 		JsonParser parser = new JsonParser();

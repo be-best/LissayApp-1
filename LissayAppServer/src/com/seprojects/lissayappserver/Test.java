@@ -13,8 +13,8 @@ public class Test
 		// 要更改的信息是下面
 		//CTweet c = new CTweet();	// 按需创建
 		//String str = c.CheckTweet();
-		CUser c = new CUser();	// 按需创建
-		String str = c.setPasswd("123ASD@01");
+		CDiary c = new CDiary();	// 按需创建
+		String str = c.delDiary();
 		if (str == null)
 		{
 			System.out.println("success");

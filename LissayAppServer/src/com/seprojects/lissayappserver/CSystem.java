@@ -35,11 +35,11 @@ public class CSystem
         {
             Socket socket = new Socket(ip, port);						  			// 创建Socket对象
             socket.setSoTimeout(10 * 1000);											// 连接时间
-            
+            //System.out.println(send.getBytes("UTF-8"));
             // 根据输入输出流和服务端连接
             OutputStream outputStream = socket.getOutputStream();         			// 获取一个输出流，向服务端发送信息
             PrintWriter printWriter = new PrintWriter(outputStream);      			// 将输出流包装成打印流
-            printWriter.print(send);                                      			// 要发送给服务器的数据
+            printWriter.print(send);                              					// 要发送给服务器的数据
             printWriter.flush();
             socket.shutdownOutput();                                      			// 关闭输出流
 
