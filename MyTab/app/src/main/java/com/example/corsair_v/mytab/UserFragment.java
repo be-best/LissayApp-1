@@ -31,6 +31,21 @@ public class UserFragment extends Fragment {
             }
         return view;
     }
+
+//    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState){
+//        if(view == null){
+//            view = inflater.inflate(R.layout.fragment_tab_5,container ,false);
+//            setting =(TextView) view.findViewById(R.id.tv_btn_memorialday);//进入setting界面
+//            setting.setOnClickListener(new View.OnClickListener() {
+//                @Override
+//                public void onClick(View v) {
+//                    Intent intent = new Intent(getActivity(),Help.class);
+//                    startActivity(intent);
+//                }
+//            });
+//        }
+//        return view;
+//    }
 }
 
 

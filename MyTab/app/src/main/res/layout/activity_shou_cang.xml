@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#f2eded"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#d81e06">
+
+        <TextView
+            android:id="@+id/Diaryempty"
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:background="#d81e06"
+            android:textSize="16sp"
+            android:text=""
+            android:textColor="#fff"
+
+            />
+
+        <TextView
+            android:id="@+id/DiaryTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="新建收藏"
+            android:textColor="#fff"
+            android:textSize="24sp"
+            />
+
+        <Button
+            android:id="@+id/DiarySend"
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:background="#00000000"
+            android:scaleType="fitXY"
+
+            android:textColor="#fff"
+            android:textSize="16sp"
+
+            />
+    </LinearLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/alterDiaryText"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="40dp"
+            android:background="@android:drawable/edit_text"
+            android:ems="10"
+            android:gravity="top"
+            android:inputType="textMultiLine"
+            android:textCursorDrawable="@drawable/myedittext"
+            app:layout_constraintHorizontal_bias="0.507"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:layout_width="368dp"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="98dp">
+
+            <Button
+                android:id="@+id/quxiao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#ADADAD"
+                android:onClick="tianjia"
+                android:text="取 消"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/queren"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#d81e06"
+                android:text="确 认"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+    </android.support.constraint.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="368dp"
+        android:layout_height="416dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="50dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="98dp"
+        tools:ignore="MissingConstraints">
+
+        <Button
+            android:id="@+id/quxiao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#ADADAD"
+            android:onClick="tianjia"
+            android:text="取 消"
+            android:textSize="16sp"
+            tools:ignore="DuplicateIds" />
+
+        <Button
+            android:id="@+id/queren"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="确 认"
+            android:textSize="16sp"
+            android:background="#d81e06"
+            tools:ignore="DuplicateIds" />
+    </LinearLayout>
+
+
+</LinearLayout>
+
+
+
+
+
+
+

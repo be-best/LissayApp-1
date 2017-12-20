@@ -53,10 +53,10 @@ public class Tab_1_Adapter extends android.widget.BaseAdapter {
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         View myView = LayoutInflater.from(context).inflate(R.layout.tab_1_item, null);
-        TextView item_tv = (TextView) myView.findViewById(R.id.item_tv);
-        TextView item_tv2 = (TextView) myView.findViewById(R.id.item_tv2);
-        item_tv.setText(tab_1.get(position).getDiaryText());
-        item_tv2.setText(tab_1.get(position).getDiaryDate());
+        TextView date = (TextView) myView.findViewById(R.id.date);
+        TextView text= (TextView) myView.findViewById(R.id.text);
+        date.setText(tab_1.get(position).getDiaryText());
+        text.setText(tab_1.get(position).getDiaryDate());
 
 //        TextView diaryTitle = (TextView) myView.findViewById(R.id.diaryTitle);
 //        TextView diaryDate = (TextView) myView.findViewById(R.id.diaryDate);
