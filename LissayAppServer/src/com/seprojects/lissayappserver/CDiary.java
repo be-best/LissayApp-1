@@ -32,8 +32,7 @@ public class CDiary
     	JsonParser parser = new JsonParser();
    		json = (JsonObject) parser.parse(CSystem.dataExchange(json.toString()));
    		if (json.get("state").isJsonNull() == true)	// 添加日记成功
-   		{
-   				
+   		{	
   			return null;
     	}
    		else
@@ -65,7 +64,7 @@ public class CDiary
     
     // 函数：更改日记权限
     // return: null(添加日记成功) String(添加日记失败信息)
- 	public String SetState()
+ 	public String setState()
  	{
  	    // 生成发送数据
     	JsonObject json = setData("20003", diaryID, null, null, null, null, state);
@@ -86,7 +85,7 @@ public class CDiary
 
  	// 函数：更改日记标签
     // return: null(更改日记标签成功) String(更改日记标签失败信息)
- 	public String SetTags()
+ 	public String setTags()
  	{
  		 // 生成发送数据
     	JsonObject json = setData("20004", diaryID, null, null, null, null, -1);
@@ -107,7 +106,7 @@ public class CDiary
  
  	// 函数：更改日记分组
     // return: null(更改日记分组成功) String(更改日记分组失败信息)
- 	public String SetGroup()
+ 	public String setGroup()
  	{
  		// 生成发送数据
     	JsonObject json = setData("20005", diaryID, null, null, groupID, null, -1);
