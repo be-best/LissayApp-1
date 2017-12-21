@@ -10,6 +10,10 @@ import java.net.Socket;
 import java.net.SocketTimeoutException;
 import java.net.UnknownHostException;
 
+import com.google.gson.JsonArray;
+import com.google.gson.JsonObject;
+import com.google.gson.JsonParser;
+
 // 类：系统操作
 // 备注：下方的json数据输出记得删除
 public class CSystem
@@ -77,4 +81,61 @@ public class CSystem
 		
 		return receive;
 	}
+	
+	// 函数: 获取验证码
+	// 参数: _phoneNum: 手机号码
+	// return: null(成功) String(失败)
+	public static String getCode(String _phoneNum)
+	{
+		// 生成发送数据
+		JsonObject json = new JsonObject();
+		json.addProperty("op", "00002");
+		JsonObject info = new JsonObject();
+		info.addProperty("phoneNum", _phoneNum);
+		json.add("info", info);
+		 
+		// 发送
+		JsonParser parser = new JsonParser();
+   		json = (JsonObject) parser.parse(CSystem.dataExchange(json.toString()));
+   		
+   		if (json.get("state").isJsonNull() == true)	// 验证码发送成功
+   		{
+   			JsonArray array = json.get("info").getAsJsonArray(); 	// 得到jsonData中info的数组
+   			json = array.get(0).getAsJsonObject();					// 将array[0]转换为JsonObject
+   			
+   			// 逐个赋值
+   			return json.get("tick").getAsString();
+    	}
+   		else
+  		{
+   			return json.get("state").getAsString(); // 验证码发送失败
+    	}
+	}
+	
+	// 函数: 验证验证码
+	// 参数: _phoneNum: 手机号码, _code: 验证码
+	// return: null(成功) String(失败)
+	public static String checkCode(String _phoneNum, String _code)
+	{
+		// 生成发送数据
+		JsonObject json = new JsonObject();
+		json.addProperty("op", "00003");
+		JsonObject info = new JsonObject();
+		info.addProperty("phoneNum", _phoneNum);
+		info.addProperty("code", _code);
+		json.add("info", info);
+			 
+		// 发送
+		JsonParser parser = new JsonParser();
+	   	json = (JsonObject) parser.parse(CSystem.dataExchange(json.toString()));
+	   		
+	   	if (json.get("state").isJsonNull() == true)	// 验证码正确
+	   	{
+	   		return null;
+	    }
+	   	else
+	  	{
+	   		return json.get("state").getAsString(); // 验证码错误
+	    }
+	} 
 }
