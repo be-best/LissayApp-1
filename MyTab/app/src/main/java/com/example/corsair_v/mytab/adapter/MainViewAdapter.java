@@ -22,7 +22,7 @@ public class MainViewAdapter extends BaseAdapter {
 
     @Override
     public int getCount() {
-        return 5;
+        return 4;
     }
 
     @Override
@@ -33,9 +33,9 @@ public class MainViewAdapter extends BaseAdapter {
 
     @Override
     public String[] getTextArray() {
-        return new String[] {"首页", "收藏", "新建", "日记本","用户"};
+        return new String[] {"首页", "收藏",  "日记本","用户"};
     }
-
+//"新建",
     @Override
     public Fragment[] getFragmentArray() {
         return fragmentArray;
@@ -43,14 +43,14 @@ public class MainViewAdapter extends BaseAdapter {
 
     @Override
     public int[] getIconImageArray() {
-        return new int[] {R.mipmap.homepage, R.mipmap.collection, R.mipmap.addition, R.mipmap.diary,R.mipmap.mine};
+        return new int[] {R.mipmap.homepage, R.mipmap.collection,  R.mipmap.diary,R.mipmap.mine};
     }
-
+//    R.mipmap.addition,
     @Override
     public int[] getSelectedIconImageArray() {
-        return new int[] {R.mipmap.homepage_fill, R.mipmap.collection_fill, R.mipmap.addition_fill, R.mipmap.diary_fill,R.mipmap.mine_fill};
+        return new int[] {R.mipmap.homepage_fill, R.mipmap.collection_fill, R.mipmap.diary_fill,R.mipmap.mine_fill};
     }
-
+//    R.mipmap.addition_fill,
     @Override
     public FragmentManager getFragmentManager() {
         return fragmentManager;

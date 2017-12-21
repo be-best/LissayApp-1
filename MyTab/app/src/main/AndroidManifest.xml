@@ -28,7 +28,12 @@
         <activity android:name=".Help" />
         <activity android:name=".AboutLissay" />
         <activity android:name=".LissayUpdate" />
-        <activity android:name=".ShouCang"></activity>
+        <activity android:name=".ShouCang" />
+        <activity android:name=".ShouCangRiJi" />
+        <activity android:name=".XianShiRiJi" />
+        <activity android:name=".ZiJiRiJiShow" />
+        <activity android:name=".NewDiary" />
+        <activity android:name=".BianJiXiuGai"></activity>
     </application>
 
 </manifest>

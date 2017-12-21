@@ -4,18 +4,17 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-public class LissayUpdate extends AppCompatActivity {
+public class BianJiXiuGai extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_lissay_update);
+        setContentView(R.layout.activity_bian_ji_xiu_gai);
     }
-    //返回关于听说界面
-    public void LissayUpdateBack(View v)
+    public void bianji(View v)
     {
         //Intent intent = new Intent(ShezhiActivity.this, MainActivity.class);
         //startActivity(intent);
-        LissayUpdate.this.finish();
+        BianJiXiuGai.this.finish();
     }
 }

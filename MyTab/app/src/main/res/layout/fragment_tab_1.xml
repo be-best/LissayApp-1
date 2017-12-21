@@ -1,16 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-   <ImageView
-       android:id="@+id/imageButton"
+   <!--<ImageView-->
+       <!--android:id="@+id/imageButton"-->
+       <!--android:layout_width="match_parent"-->
+       <!--android:layout_height="130dp"-->
+       <!--android:src="@drawable/daydayshow"-->
+       <!--android:scaleType="fitXY"-->
+       <!--android:clickable="true"/>-->
+
+   <LinearLayout
        android:layout_width="match_parent"
        android:layout_height="130dp"
-       android:src="@drawable/daydayshow"
-       android:scaleType="fitXY"
-       android:clickable="true"/>
+       android:orientation="horizontal">
+
+      <ImageView
+          android:id="@+id/tweetImage"
+          android:layout_width="133dp"
+          android:layout_height="130dp"
+          android:clickable="true"
+          android:scaleType="fitXY"
+          android:src="@drawable/daydayshow" />
+
+      <TextView
+          android:id="@+id/tweetText"
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent"
+          android:layout_weight="1"
+          android:background="@drawable/textviewbackgd"
+          android:gravity="center"
+          android:text="TextView" />
+
+   </LinearLayout>
 
    <ListView
        android:id="@+id/diaryListView"
@@ -20,7 +45,8 @@
        android:layout_marginTop="130dp"
        android:visibility="visible"
        app:layout_constraintLeft_toLeftOf="parent"
-       app:layout_constraintTop_toTopOf="@+id/imageButton" />
+       app:layout_constraintTop_toTopOf="@+id/tweetImage"
+       tools:ignore="NotSibling" />
 
 
 

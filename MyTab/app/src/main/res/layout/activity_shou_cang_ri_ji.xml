@@ -2,8 +2,9 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="#f2eded"
-    android:orientation="vertical" >
+    android:orientation="vertical">
 
 
     <LinearLayout
@@ -12,32 +13,30 @@
         android:background="#d81e06">
 
         <Button
-            android:id="@+id/LissayUpdateBack"
+            android:id="@+id/backsc"
             android:layout_width="50dp"
             android:layout_height="25dp"
             android:layout_gravity="center"
             android:layout_margin="10dp"
             android:background="#00000000"
-            android:onClick="LissayUpdateBack"
+
             android:scaleType="fitXY"
             android:text="返回"
             android:textColor="#fff"
 
             android:textSize="16sp" />
 
-
-
         <TextView
-            android:id="@+id/LissayUpdateTitle"
+            android:id="@+id/DiaryTitle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_weight="1"
             android:gravity="center"
-            android:text="听说版本"
+            android:text="日记收藏"
             android:textColor="#fff"
-            android:textSize="24sp"
-            />
+            android:textSize="24sp" />
+
         <Button
             android:id="@+id/DiarySend"
             android:layout_width="50dp"
@@ -45,35 +44,30 @@
             android:layout_gravity="center"
             android:layout_margin="10dp"
             android:background="#00000000"
+
             android:scaleType="fitXY"
-            android:textSize="16sp"
             android:text=""
             android:textColor="#fff"
 
-            />
+            android:textSize="16sp" />
     </LinearLayout>
 
 
-    <TextView
+    <ListView
+        android:id="@+id/rijixsListView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="567dp"
+        android:layout_marginLeft="0dp"
         android:layout_marginTop="0dp"
-        android:background="#ffffff"
-        android:gravity="center"
-        android:text=" 当前已是最新版本！"
-        android:textSize="25sp"
-
-        />
-
-
-
-
-
-
-
-
-
-
-
+        android:visibility="visible"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tweetImage" />
 
 </LinearLayout>
+
+
+
+
+
+
+

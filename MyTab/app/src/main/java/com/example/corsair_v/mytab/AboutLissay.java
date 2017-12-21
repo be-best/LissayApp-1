@@ -1,4 +1,4 @@
-﻿package com.example.corsair_v.mytab;
+package com.example.corsair_v.mytab;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;

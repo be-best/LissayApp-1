@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#d81e06">
+
+        <Button
+            android:id="@+id/DiaryCancel"
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:background="#00000000"
+            android:onClick="newdiary"
+            android:scaleType="fitXY"
+            android:text="取消"
+            android:textColor="#fff"
+
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/DiaryTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="发日记"
+            android:textColor="#fff"
+            android:textSize="24sp"
+            />
+
+        <Button
+            android:id="@+id/DiarySend"
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:background="#00000000"
+            android:scaleType="fitXY"
+            android:text="发表"
+            android:textColor="#fff"
+            android:textSize="16sp"
+
+            />
+    </LinearLayout>
+
+
+
+
+    <EditText
+        android:id="@+id/DiaryWord"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:gravity="top"
+        android:hint="记录你内心最真实的感受..."
+        android:inputType="textMultiLine"
+        android:lineSpacingExtra="12dp"
+        android:padding="15dp"
+        android:scrollbars="vertical"
+        android:textSize="16sp" />
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff">
+        <Button
+            android:id="@+id/ButtonShare"
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            android:layout_gravity="left"
+            android:layout_margin="10dp"
+            android:background="#d81e06"
+            android:textColor="#fff"
+            android:text="可共享" />
+        <Button
+            android:alpha="0"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:layout_weight="1.0" />
+        <Button
+            android:id="@+id/ButtonComment"
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            android:layout_gravity="right"
+            android:layout_margin="10dp"
+            android:background="#d81e06"
+            android:textColor="#fff"
+            android:text="可评论" />
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

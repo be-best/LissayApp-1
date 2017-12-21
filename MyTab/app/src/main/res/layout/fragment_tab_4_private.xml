@@ -43,212 +43,212 @@
             android:background="#00000000"
             android:scaleType="fitXY"
             android:textSize="16sp"
-            android:text="添加"
+            android:text=""
             android:textColor="#fff"
 
             />
     </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:orientation="horizontal">
-        <Button
-            android:id="@+id/btn_share2"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:layout_centerVertical="true"
-            android:text="可分享"
-            android:background="#ffffff"
-            android:textColor="#000"
-            android:textSize="22sp"
-            tools:ignore="Suspicious0dp" />
-        <Button
-            android:id="@+id/btn_simi2"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:layout_centerVertical="true"
-            android:text="私密"
-            android:background="#c0c0ba"
-            android:textColor="#ffffff"
-            android:textSize="22sp" />
-    </LinearLayout>
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="48dp"-->
+        <!--android:orientation="horizontal">-->
+        <!--<Button-->
+            <!--android:id="@+id/btn_share2"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:text="可分享"-->
+            <!--android:background="#ffffff"-->
+            <!--android:textColor="#000"-->
+            <!--android:textSize="22sp"-->
+            <!--tools:ignore="Suspicious0dp" />-->
+        <!--<Button-->
+            <!--android:id="@+id/btn_simi2"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:text="私密"-->
+            <!--android:background="#c0c0ba"-->
+            <!--android:textColor="#ffffff"-->
+            <!--android:textSize="22sp" />-->
+    <!--</LinearLayout>-->
 
-    <RelativeLayout
-        android:id="@+id/re_ganqing"
-        android:layout_width="match_parent"
-        android:layout_height="47dp"
-        android:layout_marginBottom="0dp"
-        android:layout_marginTop="2dp"
-        android:background="#ffffff"
-        android:clickable="true"
-        android:paddingBottom="8dp"
-        android:paddingTop="8dp">
+    <!--<RelativeLayout-->
+        <!--android:id="@+id/re_ganqing"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="47dp"-->
+        <!--android:layout_marginBottom="0dp"-->
+        <!--android:layout_marginTop="2dp"-->
+        <!--android:background="#ffffff"-->
+        <!--android:clickable="true"-->
+        <!--android:paddingBottom="8dp"-->
+        <!--android:paddingTop="8dp">-->
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:layout_marginLeft="16dp"
-            android:text="情感"
-            android:textColor="#353535"
-            android:textSize="16sp" />
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginLeft="16dp"-->
+            <!--android:text="情感"-->
+            <!--android:textColor="#353535"-->
+            <!--android:textSize="16sp" />-->
 
-        <ImageView
-            android:layout_width="26dp"
-            android:layout_height="26dp"
-            android:layout_alignParentRight="true"
-            android:layout_centerVertical="true"
-            android:layout_marginRight="16dp"
-            android:src="@drawable/my_arror" />
+        <!--<ImageView-->
+            <!--android:layout_width="26dp"-->
+            <!--android:layout_height="26dp"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginRight="16dp"-->
+            <!--android:src="@drawable/my_arror" />-->
 
-    </RelativeLayout>
-    <RelativeLayout
-        android:id="@+id/re_shenghuo"
-        android:layout_width="match_parent"
-        android:layout_height="47dp"
-        android:layout_marginBottom="0dp"
-        android:layout_marginTop="2dp"
-        android:background="#ffffff"
-        android:clickable="true"
-        android:paddingBottom="8dp"
-        android:paddingTop="8dp">
+    <!--</RelativeLayout>-->
+    <!--<RelativeLayout-->
+        <!--android:id="@+id/re_shenghuo"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="47dp"-->
+        <!--android:layout_marginBottom="0dp"-->
+        <!--android:layout_marginTop="2dp"-->
+        <!--android:background="#ffffff"-->
+        <!--android:clickable="true"-->
+        <!--android:paddingBottom="8dp"-->
+        <!--android:paddingTop="8dp">-->
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:layout_marginLeft="16dp"
-            android:text="生活"
-            android:textColor="#353535"
-            android:textSize="16sp" />
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginLeft="16dp"-->
+            <!--android:text="生活"-->
+            <!--android:textColor="#353535"-->
+            <!--android:textSize="16sp" />-->
 
-        <ImageView
-            android:layout_width="26dp"
-            android:layout_height="26dp"
-            android:layout_alignParentRight="true"
-            android:layout_centerVertical="true"
-            android:layout_marginRight="16dp"
-            android:src="@drawable/my_arror" />
+        <!--<ImageView-->
+            <!--android:layout_width="26dp"-->
+            <!--android:layout_height="26dp"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginRight="16dp"-->
+            <!--android:src="@drawable/my_arror" />-->
 
-    </RelativeLayout>
-    <RelativeLayout
-        android:id="@+id/re_yundong"
-        android:layout_width="match_parent"
-        android:layout_height="47dp"
-        android:layout_marginBottom="0dp"
-        android:layout_marginTop="2dp"
-        android:background="#ffffff"
-        android:clickable="true"
-        android:paddingBottom="8dp"
-        android:paddingTop="8dp">
+    <!--</RelativeLayout>-->
+    <!--<RelativeLayout-->
+        <!--android:id="@+id/re_yundong"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="47dp"-->
+        <!--android:layout_marginBottom="0dp"-->
+        <!--android:layout_marginTop="2dp"-->
+        <!--android:background="#ffffff"-->
+        <!--android:clickable="true"-->
+        <!--android:paddingBottom="8dp"-->
+        <!--android:paddingTop="8dp">-->
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:layout_marginLeft="16dp"
-            android:text="运动"
-            android:textColor="#353535"
-            android:textSize="16sp" />
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginLeft="16dp"-->
+            <!--android:text="运动"-->
+            <!--android:textColor="#353535"-->
+            <!--android:textSize="16sp" />-->
 
-        <ImageView
-            android:layout_width="26dp"
-            android:layout_height="26dp"
-            android:layout_alignParentRight="true"
-            android:layout_centerVertical="true"
-            android:layout_marginRight="16dp"
-            android:src="@drawable/my_arror" />
+        <!--<ImageView-->
+            <!--android:layout_width="26dp"-->
+            <!--android:layout_height="26dp"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginRight="16dp"-->
+            <!--android:src="@drawable/my_arror" />-->
 
-    </RelativeLayout>
-    <RelativeLayout
-        android:id="@+id/re_yangsheng"
-        android:layout_width="match_parent"
-        android:layout_height="47dp"
-        android:layout_marginBottom="0dp"
-        android:layout_marginTop="2dp"
-        android:background="#ffffff"
-        android:clickable="true"
-        android:paddingBottom="8dp"
-        android:paddingTop="8dp">
+    <!--</RelativeLayout>-->
+    <!--<RelativeLayout-->
+        <!--android:id="@+id/re_yangsheng"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="47dp"-->
+        <!--android:layout_marginBottom="0dp"-->
+        <!--android:layout_marginTop="2dp"-->
+        <!--android:background="#ffffff"-->
+        <!--android:clickable="true"-->
+        <!--android:paddingBottom="8dp"-->
+        <!--android:paddingTop="8dp">-->
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:layout_marginLeft="16dp"
-            android:text="养生"
-            android:textColor="#353535"
-            android:textSize="16sp" />
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginLeft="16dp"-->
+            <!--android:text="养生"-->
+            <!--android:textColor="#353535"-->
+            <!--android:textSize="16sp" />-->
 
-        <ImageView
-            android:layout_width="26dp"
-            android:layout_height="26dp"
-            android:layout_alignParentRight="true"
-            android:layout_centerVertical="true"
-            android:layout_marginRight="16dp"
-            android:src="@drawable/my_arror" />
+        <!--<ImageView-->
+            <!--android:layout_width="26dp"-->
+            <!--android:layout_height="26dp"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginRight="16dp"-->
+            <!--android:src="@drawable/my_arror" />-->
 
-    </RelativeLayout>
-    <RelativeLayout
-        android:id="@+id/re_xuexi"
-        android:layout_width="match_parent"
-        android:layout_height="47dp"
-        android:layout_marginBottom="0dp"
-        android:layout_marginTop="2dp"
-        android:background="#ffffff"
-        android:clickable="true"
-        android:paddingBottom="8dp"
-        android:paddingTop="8dp">
+    <!--</RelativeLayout>-->
+    <!--<RelativeLayout-->
+        <!--android:id="@+id/re_xuexi"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="47dp"-->
+        <!--android:layout_marginBottom="0dp"-->
+        <!--android:layout_marginTop="2dp"-->
+        <!--android:background="#ffffff"-->
+        <!--android:clickable="true"-->
+        <!--android:paddingBottom="8dp"-->
+        <!--android:paddingTop="8dp">-->
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:layout_marginLeft="16dp"
-            android:text="学习"
-            android:textColor="#353535"
-            android:textSize="16sp" />
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginLeft="16dp"-->
+            <!--android:text="学习"-->
+            <!--android:textColor="#353535"-->
+            <!--android:textSize="16sp" />-->
 
-        <ImageView
-            android:layout_width="26dp"
-            android:layout_height="26dp"
-            android:layout_alignParentRight="true"
-            android:layout_centerVertical="true"
-            android:layout_marginRight="16dp"
-            android:src="@drawable/my_arror" />
-    </RelativeLayout>
+        <!--<ImageView-->
+            <!--android:layout_width="26dp"-->
+            <!--android:layout_height="26dp"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginRight="16dp"-->
+            <!--android:src="@drawable/my_arror" />-->
+    <!--</RelativeLayout>-->
 
-    <RelativeLayout
-        android:id="@+id/re_weifenlei"
-        android:layout_width="match_parent"
-        android:layout_height="47dp"
-        android:layout_marginBottom="0dp"
-        android:layout_marginTop="2dp"
-        android:background="#ffffff"
-        android:clickable="true"
-        android:paddingBottom="8dp"
-        android:paddingTop="8dp">
+    <!--<RelativeLayout-->
+        <!--android:id="@+id/re_weifenlei"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="47dp"-->
+        <!--android:layout_marginBottom="0dp"-->
+        <!--android:layout_marginTop="2dp"-->
+        <!--android:background="#ffffff"-->
+        <!--android:clickable="true"-->
+        <!--android:paddingBottom="8dp"-->
+        <!--android:paddingTop="8dp">-->
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:layout_marginLeft="16dp"
-            android:text="未分类"
-            android:textColor="#353535"
-            android:textSize="16sp" />
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginLeft="16dp"-->
+            <!--android:text="未分类"-->
+            <!--android:textColor="#353535"-->
+            <!--android:textSize="16sp" />-->
 
-        <ImageView
-            android:layout_width="26dp"
-            android:layout_height="26dp"
-            android:layout_alignParentRight="true"
-            android:layout_centerVertical="true"
-            android:layout_marginRight="16dp"
-            android:src="@drawable/my_arror" />
+        <!--<ImageView-->
+            <!--android:layout_width="26dp"-->
+            <!--android:layout_height="26dp"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginRight="16dp"-->
+            <!--android:src="@drawable/my_arror" />-->
 
-    </RelativeLayout>
+    <!--</RelativeLayout>-->
 
 
 </LinearLayout>
